@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <form action="/submit" method="post">
+       
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Job Information</legend>
+
+            <label for="position">Position Applied For:</label><br>
+            <input type="text" id="position" name="position" required><br><br>
+
+            <label for="experience">Years of Experience:</label><br>
+            <input type="number" id="experience" name="experience" min="0" required><br><br>
+
+            <label for="availability">Date Available to Start:</label><br>
+            <input type="date" id="availability" name="availability" required><br><br>
+        </fieldset>
+
+       
+        <fieldset>
+            <legend>Education</legend>
+
+            <label for="highestDegree">Highest Degree Obtained:</label><br>
+            <select id="highestDegree" name="highestDegree" required>
+                <option value="">--Select--</option>
+                <option value="High School">High School</option>
+                <option value="Associate Degree">Associate Degree</option>
+                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                <option value="Master's Degree">Master's Degree</option>
+                <option value="Doctorate">Doctorate</option>
+            </select><br><br>
+
+            <label for="school">School/University Name:</label><br>
+            <input type="text" id="school" name="school" required><br><br>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Upload Resume</legend>
+
+            <label for="resume">Upload Your Resume:</label><br>
+            <input type="file" id="resume" name="resume" required><br><br>
+        </fieldset>
+
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
